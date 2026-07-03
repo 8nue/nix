@@ -1,7 +1,3 @@
-# Edit this configuration file to define what should be installed on
-# your system. Help is available in the configuration.nix(5) man page, on
-# https://search.nixos.org/options and in the NixOS manual (`nixos-help`).
-
 { config, lib, pkgs, ... }:
 
 {
@@ -10,11 +6,11 @@
       ./hardware-configuration.nix
     ];
 
-  # Use the systemd-boot EFI boot loader.
+  # system stuff
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  # networking.hostName = "nixos"; # Define your hostname.
+  networking.hostName = "nixos"; # Define your hostname. (as one would)
 
   # Configure network connections interactively with nmcli or nmtui.
   networking.networkmanager.enable = true;
@@ -34,6 +30,8 @@
   #   useXkbConfig = true; # use xkb.options in tty.
   # };
 
+
+# god knows what this does
 nixpkgs.config.allowUnfree = true;
 
   programs.hyprland = {
@@ -64,16 +62,6 @@ programs.steam = {
 
 programs.gamemode.enable = true;
 
-  # Configure keymap in X11
-  # services.xserver.xkb.layout = "us";
-  # services.xserver.xkb.options = "eurosign:e,caps:escape";
-
-  # Enable CUPS to print documents.
-  # services.printing.enable = true;
-
-  # Enable sound.
-  # services.pulseaudio.enable = true;
-  # OR
    services.pipewire = {
      enable = true;
      pulse.enable = true;
@@ -85,12 +73,25 @@ programs.gamemode.enable = true;
   # Enable touchpad support (enabled default in most desktopManager).
   # services.libinput.enable = true;
 
-  # Define a user account. Don't forget to set a password with ‘passwd’.
    users.users.slushy = {
      isNormalUser = true;
-     extraGroups = [ "wheel" ]; # Enable ‘sudo’ for the user.
+     extraGroups = [ "wheel" ];
      packages = with pkgs; [
        tree
+	fastfetch
+	alacritty
+	thunar
+	firefox
+	neovim
+	nix-search-cli
+	prismlauncher
+	vencord
+	rofi
+	lutris
+	steam
+	protonup-qt
+	waybar
+	hyprpaper
      ];
      initialPassword = "changeme";
    };
@@ -104,13 +105,10 @@ environment.systemPackages = with pkgs; [
 	wget
 	curl
 	git
-	fastfetch
-	alacritty
-	firefox
-	thunar
 	stdenv
 	htop
 	gnumake
+	github-cli
    ];
 
 fonts.packages = with pkgs; [

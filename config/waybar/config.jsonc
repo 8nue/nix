@@ -1,0 +1,36 @@
+{
+  "layer": "top",
+  "position": "top",
+  "margin-top": 8,
+  "margin-left": 8,
+  "margin-right": 8,
+  "spacing": 4,
+
+  "modules-left": ["hyprland/workspaces"],
+  "modules-center": ["clock", "custom/shutdown"],
+  "modules-right": ["hyprland/window"],
+
+  "clock": {
+    "format": "{:%H:%M:%S}",
+    "interval": 1,
+    "tooltip": false
+  },
+
+  "hyprland/workspaces": {
+    "disable-scroll": true,
+    "format": "{name}",
+    "persistent-workspaces": {
+      "*": [ 1, 2, 3, 4 ]
+    }
+  },
+
+  "hyprland/window": {
+    "max-length": 50,
+    "separate-outputs": true
+  },
+
+  "custom/shutdown": {
+    "on-click": "~/.config/waybar/scripts/shutdown.sh",
+    "format": "󰐥"
+    }
+  }

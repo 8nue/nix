@@ -1,0 +1,55 @@
+* {
+  border: none;
+  border-radius: 0;
+  font-family: JetBrainsMono Nerd Font;
+  font-size: 12px;
+  padding: 0 6px;
+}
+
+window#waybar {
+  background: transparent;
+  padding: 0;
+  color: #ffffff;
+}
+
+#workspaces button {
+  padding: 0 6px;
+  background: transparent;
+  color: #888888;
+}
+
+#workspaces button.active {
+  color: #ffffff;
+  background: rgba(40, 40, 40, 0.7);
+  border: 1px solid rgba(40, 40, 20, 1);
+  border-radius: 50px;
+}
+
+#workspaces button:hover {
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  background: transparent;
+  box-shadow: none;
+  border-radius: 50px;
+}
+
+#clock {
+  font-weight: bold;
+  color: #ffffff;
+}
+
+#waybar {
+  min-width: 0;
+}
+
+.modules-left,
+.modules-center,
+.modules-right {
+  background: rgba(20, 20, 20, 0.7);
+  padding: 3px 5px;
+  border-radius: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+#shutdown {
+  font-size: 24px;
+}
