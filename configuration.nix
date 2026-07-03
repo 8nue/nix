@@ -6,31 +6,17 @@
       ./hardware-configuration.nix
     ];
 
-  # system stuff
-  boot.loader.systemd-boot.enable = true;
-  boot.loader.efi.canTouchEfiVariables = true;
+################
+# system stuff #
+################
 
-  networking.hostName = "nixos"; # Define your hostname. (as one would)
-
-  # Configure network connections interactively with nmcli or nmtui.
-  networking.networkmanager.enable = true;
+boot.loader.systemd-boot.enable = true;
+boot.loader.efi.canTouchEfiVariables = true;
+networking.hostName = "nixos";
+networking.networkmanager.enable = true; #nmtui goat
 
   # Set your time zone.
   # time.timeZone = "Europe/Amsterdam";
-
-  # Configure network proxy if necessary
-  # networking.proxy.default = "http://user:password@proxy:port/";
-  # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
-
-  # Select internationalisation properties.
-  # i18n.defaultLocale = "en_US.UTF-8";
-  # console = {
-  #   font = "Lat2-Terminus16";
-  #   keyMap = "us";
-  #   useXkbConfig = true; # use xkb.options in tty.
-  # };
-
-
 # god knows what this does
 nixpkgs.config.allowUnfree = true;
 
@@ -92,6 +78,7 @@ programs.gamemode.enable = true;
 	protonup-qt
 	waybar
 	hyprpaper
+	bottles
      ];
      initialPassword = "changeme";
    };
