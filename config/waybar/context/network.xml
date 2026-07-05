@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <menu id="menu">
+    <section>
+      <item>
+        <attribute name="label" translatable="yes">Wi-Fi Off</attribute>
+        <attribute name="action">action-1</attribute>
+      </item>
+      <item>
+        <attribute name="label" translatable="yes">Wi-Fi On</attribute>
+        <attribute name="action">action-2</attribute>
+      </item>
+      <item>
+        <attribute name="label" translatable="yes">nmtui</attribute>
+        <attribute name="action">action-3</attribute>
+      </item>
+      <item>
+        <attribute name="label" translatable="yes">Connection Editor</attribute>
+        <attribute name="action">action-4</attribute>
+      </item>
+    </section>
+  </menu>
+</interface>

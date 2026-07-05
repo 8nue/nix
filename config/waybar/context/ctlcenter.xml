@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <menu id="menu">
+    <section>
+      <item>
+        <attribute name="label" translatable="yes">System Monitor</attribute>
+        <attribute name="action">action-1-1</attribute>
+      </item>
+      <item>
+        <attribute name="label" translatable="yes">GPU Monitor</attribute>
+        <attribute name="action">action-1-2</attribute>
+      </item>
+      <item>
+        <attribute name="label" translatable="yes">PowerTOP</attribute>
+        <attribute name="action">action-1-3</attribute>
+      </item>
+      <item>
+        <attribute name="label" translatable="yes">Mission Center</attribute>
+        <attribute name="action">action-1-4</attribute>
+      </item>
+    </section>
+    <section>
+      <item>
+        <attribute name="label" translatable="yes">nwg-look</attribute>
+        <attribute name="action">action-2-1</attribute>
+      </item>
+      <item>
+        <attribute name="label" translatable="yes">qt6ct</attribute>
+        <attribute name="action">action-2-2</attribute>
+      </item>
+      <item>
+        <attribute name="label" translatable="yes">Kvantum</attribute>
+        <attribute name="action">action-2-3</attribute>
+      </item>
+    </section>
+    <section>
+      <item>
+        <attribute name="label" translatable="yes">60 Hz</attribute>
+        <attribute name="action">action-3-1</attribute>
+      </item>
+      <item>
+        <attribute name="label" translatable="yes">90 Hz</attribute>
+        <attribute name="action">action-3-2</attribute>
+      </item>
+      <item>
+        <attribute name="label" translatable="yes">144 Hz</attribute>
+        <attribute name="action">action-3-3</attribute>
+      </item>
+    </section>
+    <section>
+      <item>
+        <attribute name="label" translatable="yes">Caffeine</attribute>
+        <attribute name="action">action-4-1</attribute>
+      </item>
+      <item>
+        <attribute name="label" translatable="yes">Lid Switch</attribute>
+        <attribute name="action">action-4-2</attribute>
+      </item>
+    </section>
+    <section>
+      <item>
+        <attribute name="label" translatable="yes">Power Save</attribute>
+        <attribute name="action">action-5</attribute>
+      </item>
+      <item>
+        <attribute name="label" translatable="yes">Reload Mango</attribute>
+        <attribute name="action">action-6</attribute>
+      </item>
+    </section>
+  </menu>
+</interface>

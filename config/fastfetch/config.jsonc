@@ -1,0 +1,276 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
+  "logo": {
+    "type": "auto",
+    "source": "",
+    "color": {
+      "1": "#eb6f92",
+      "2": "#31748f",
+      "3": "#f6c177",
+      "4": "#9ccfd8",
+      "5": "#c4a7e7",
+      "6": "#9ccfd8",
+      "7": "#e0def4",
+      "8": "#ebbcba",
+      "9": "#908caa"
+    },
+    "padding": {
+      "top": 0,
+      "left": 0,
+      "bottom": 0,
+      "right": 4
+    },
+    "printRemaining": true,
+    "preserveAspectRatio": false,
+    "recache": false,
+    "position": "left",
+    "chafa": {
+      "fgOnly": false,
+      "symbols": "block+border+space-wide-inverted"
+    }
+  },
+  "display": {
+    "separator": "  ",
+    "color": {
+      "keys": "#c4a7e7",
+      "title": "#ebbcba",
+      "output": "#e0def4",
+      "separator": "#6e6a86"
+    },
+    "brightColor": true,
+    "showErrors": false,
+    "disableLinewrap": false,
+    "hideCursor": false,
+    "stat": false,
+    "pipe": false,
+    "key": {
+      "width": 18,
+      "type": "string",
+      "paddingLeft": 2
+    },
+    "duration": {
+      "abbreviation": false,
+      "spaceBeforeUnit": "default"
+    },
+    "size": {
+      "maxPrefix": "YB",
+      "binaryPrefix": "iec",
+      "ndigits": 2,
+      "spaceBeforeUnit": "default"
+    },
+    "temp": {
+      "unit": "D",
+      "ndigits": 1,
+      "color": {
+        "green": "32",
+        "yellow": "93",
+        "red": "91"
+      },
+      "spaceBeforeUnit": "default"
+    },
+    "percent": {
+      "type": [
+        "num",
+        "num-color"
+      ],
+      "ndigits": 0,
+      "color": {
+        "green": "32",
+        "yellow": "93",
+        "red": "91"
+      },
+      "spaceBeforeUnit": "default",
+      "width": 0
+    },
+    "bar": {
+      "char": {
+        "elapsed": "■",
+        "total": "-"
+      },
+      "border": {
+        "left": "[ ",
+        "right": " ]",
+        "leftElapsed": "",
+        "rightElapsed": ""
+      },
+      "color": {
+        "elapsed": "#c4a7e7",
+        "total": "#6e6a86",
+        "border": "#908caa"
+      },
+      "width": 12
+    },
+    "fraction": {
+      "ndigits": 2,
+      "trailingZeros": "default"
+    },
+    "noBuffer": false,
+    "freq": {
+      "ndigits": 2,
+      "spaceBeforeUnit": "default"
+    },
+    "constants": []
+  },
+  "general": {
+    "thread": true,
+    "processingTimeout": 5000,
+    "detectVersion": true,
+    "playerName": "",
+    "dsForceDrm": false
+  },
+  "modules": [
+    {
+      "type": "title",
+      "key": " 󰋜 ",
+      "fqdn": false,
+      "color": {
+        "user": "#ebbcba",
+        "at": "#6e6a86",
+        "host": "#c4a7e7"
+      }
+    },
+    {
+      "type": "separator",
+      "string": "─",
+      "outputColor": "#6e6a86",
+      "times": 0
+    },
+    {
+      "type": "os",
+      "keyIcon": "",
+      "outputColor": "#e0def4"
+    },
+    {
+      "type": "kernel",
+      "keyIcon": ""
+    },
+    {
+      "type": "uptime",
+      "keyIcon": ""
+    },
+    {
+      "type": "packages",
+      "keyIcon": "󰏖",
+      "disabled": [
+        "apk"
+      ],
+      "combined": false
+    },
+    {
+      "type": "shell",
+      "keyIcon": ""
+    },
+    {
+      "type": "separator",
+      "string": "─",
+      "outputColor": "#6e6a86",
+      "times": 0
+    },
+    {
+      "type": "display",
+      "key": "Display ",
+      "keyIcon": "󰍹",
+      "compactType": "none",
+      "preciseRefreshRate": false,
+      "order": null
+    },
+    {
+      "type": "cpu",
+      "keyIcon": "",
+      "temp": false,
+      "showPeCoreCount": true,
+      "tempSensor": ""
+    },
+    {
+      "type": "gpu",
+      "keyIcon": "󰾲",
+      "driverSpecific": false,
+      "temp": false,
+      "hideType": "none"
+    },
+    {
+      "type": "memory",
+      "keyIcon": ""
+    },
+    {
+      "type": "swap",
+      "keyIcon": "󰓡",
+      "separate": false
+    },
+    {
+      "type": "disk",
+      "keyIcon": "",
+      "showRegular": true,
+      "showExternal": true,
+      "showHidden": false,
+      "showSubvolumes": false,
+      "showReadOnly": true,
+      "showUnknown": false,
+      "folders": "",
+      "hideFolders": "/efi:/boot:/boot/*",
+      "hideFS": "",
+      "useAvailable": false
+    },
+    {
+      "type": "battery",
+      "keyIcon": "",
+      "temp": false
+    },
+    {
+      "type": "poweradapter",
+      "keyIcon": "󰚥"
+    },
+    {
+      "type": "separator",
+      "string": "─",
+      "outputColor": "#6e6a86",
+      "times": 0
+    },
+    {
+      "type": "wm",
+      "keyIcon": "",
+      "outputColor": "#f6c177",
+      "detectPlugin": true
+    },
+    {
+      "type": "wmtheme",
+      "keyIcon": "󰓸"
+    },
+    {
+      "type": "font",
+      "keyIcon": ""
+    },
+    {
+      "type": "cursor",
+      "keyIcon": "󰆿"
+    },
+    {
+      "type": "terminal",
+      "keyIcon": "",
+      "outputColor": "#9ccfd8"
+    },
+    {
+      "type": "terminalfont",
+      "keyIcon": ""
+    },
+    {
+      "type": "separator",
+      "string": "─",
+      "outputColor": "#6e6a86",
+      "times": 0
+    },
+    {
+      "type": "colors",
+      "keyIcon": "",
+      "symbol": "block",
+      "block": {
+        "width": 2,
+        "range": [
+          0,
+          15
+        ]
+      },
+      "brightness": "default"
+    }
+  ]
+}

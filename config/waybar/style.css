@@ -1,55 +1,66 @@
+@import "colors/colors.css";
+
 * {
-  border: none;
-  border-radius: 0;
-  font-family: JetBrainsMono Nerd Font;
-  font-size: 12px;
-  padding: 0 6px;
-}
-
-window#waybar {
-  background: transparent;
-  padding: 0;
-  color: #ffffff;
-}
-
-#workspaces button {
-  padding: 0 6px;
-  background: transparent;
-  color: #888888;
-}
-
-#workspaces button.active {
-  color: #ffffff;
-  background: rgba(40, 40, 40, 0.7);
-  border: 1px solid rgba(40, 40, 20, 1);
-  border-radius: 50px;
-}
-
-#workspaces button:hover {
-  border: 1px solid rgba(255, 255, 255, 0.7);
-  background: transparent;
-  box-shadow: none;
-  border-radius: 50px;
-}
-
-#clock {
-  font-weight: bold;
-  color: #ffffff;
+    font-family: 'CaskaydiaCove Nerd Font Propo';
+	border: none;
+	border-radius: 0;
+	min-height: 0;
+	margin: 0;
+	padding: 0;
+	text-shadow: none;
 }
 
 #waybar {
-  min-width: 0;
+    font-weight: 700;
+    background: transparent;
+    font-size: 14px;
+    color: @fg;
 }
 
-.modules-left,
-.modules-center,
-.modules-right {
-  background: rgba(20, 20, 20, 0.7);
-  padding: 3px 5px;
-  border-radius: 50px;
-  border: 1px solid rgba(255, 255, 255, 0.7);
+#workspaces,
+#clock,
+#window {
+    padding: 1px 14px;
+    margin: 0 4px;
+    border-radius: 15px;
+    background: @module-bg;
 }
 
-#shutdown {
-  font-size: 24px;
+#workspaces button {
+    color: @workspace-fg;
+    font-size: 14px;
+    border-radius: 100%;
+    padding: 0 4px;
+    margin: 0 3px;
+}
+
+#workspaces button:hover {
+    color: @rose;
+    background: transparent;
+}
+
+#workspaces button.active {
+    color: @text;
+    background: rgba(235, 111, 146, 0.15);
+}
+
+#clock {
+    padding: 1px 18px;
+    color: @rose;
+}
+
+#window {
+    padding: 1px 12px;
+    color: @subtle;
+}
+
+tooltip {
+    border-radius: 15px;
+    background: @tooltip-bg;
+}
+
+tooltip label {
+    padding: 3px 10px;
+    color: @fg;
+	font-weight: 700;
 }
